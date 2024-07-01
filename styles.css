@@ -1,0 +1,104 @@
+body{
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.outerclock{
+    align-items: center  ;
+    width: 350px;
+    height: 350px;
+    background: #e5e5e5;
+    box-shadow: 6px 6px 8px gray,-6px -6px 8px white;
+    position: relative;
+    margin-left: 35%;
+    margin-top: 10%;
+    border-radius: 50%;
+}
+.innerclock{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 25.8%;
+    left: 37.7%;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("download.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 46%;
+    left: 47.5%;
+    border-radius: 50%;
+    background: black;
+    z-index: 4;
+}
+#hour{
+    width: 7px;
+    height: 80px;
+    background: #00e5ff;
+    position: absolute;
+    top: 36%;
+    left: 48%;
+    border-radius: 50% 50% 0px 0px;
+    transform-origin: bottom;
+    z-index: 2;
+}
+#min{
+    width: 8px;
+    height: 110px;
+    background: yellow;
+    position: absolute;
+    top: 31%;
+    left: 48%;
+    border-radius: 50% 50% 0px 0px;
+    transform-origin: bottom;
+    z-index: 1;
+}
+#sec{
+    width: 5px;
+    height: 120px;
+    background: red;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform-origin: bottom;
+    z-index: 3;
+}
+.time p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.time .up{
+    margin-top: 13%;
+    margin-left: 40px;
+}
+
+.time .west {
+    margin-left: 33%;
+    margin-top: 60px;
+}
+
+.time p:nth-child(1){
+    position: absolute;
+    left: 44%;
+    top: -6%;
+}
+.time p:nth-child(2){
+    position: absolute;
+    left: 3%;
+    top: 36%;
+}
+.time p:nth-child(3){
+    position: absolute;
+    left: 47%;
+    top: 65%;
+}
+.time p:nth-child(4){
+    position: absolute;
+    left: 59%;
+    top: 42%;
+}
